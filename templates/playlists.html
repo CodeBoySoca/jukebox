@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="playlist-content"> 
+   <h1>Top Playlist</h1>
+    <div class="playlist">
+    {% if playlist %}
+        <div class="playlist-header">
+            <div class="artist-details">
+               <div> 
+                <img src="{{ url_for('static', path='images/nas.png')}}" alt="">
+                <ul>
+                   <li>Playlist Name</li>
+                   <li>Playlist Author</li>
+                   <li>Genre</li>
+                </ul>
+               </div>
+            </div>
+            <div class="playlist-likes"><span><i class="fa-regular fa-heart"></i></span></div>
+        </div>
+        <div class="playlist-body">
+            <div class="playlist-artist">
+              <ul>
+                <li>Nas</li>
+                <li>Purple</li>
+              </ul>
+              <div>
+                <span>3:09</span>
+              </div>
+           </div>
+            <div class="playlist-stats">
+                <ul>
+                   <li><i class="fa-solid fa-heart"></i>&nbsp;122</li> 
+                   <li><i class="fa-solid fa-headphones"></i>&nbsp;122</li> 
+                </ul>
+            </div>
+        </div>
+        {% else %}
+        <div class="playlist-empty">
+        <img src="{{ url_for('static', path='images/song_note.png')}}" alt="music note icon">
+          <h3>no playlists added</h3>
+          <p>Oh no! There appears to be no playlist. Click the button below to create a playlist</p>
+         </div> 
+   {% endif %}
+
+    </div>
+    <a href="{{ url_for('create_playlist')}}">CREATE PLAYLIST</a>
+
+</div>   
+{% endblock %}

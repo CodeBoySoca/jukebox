@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="login-content">
+  <h1>Confirmation code</h1>  
+  <form>
+     <input type="text" name="confirmation_code" placeholder=" Enter confirmation code" /><br>
+  </form>
+  <a href="{{ url_for('song')}}"><i class="fa-solid fa-cloud"></i>&nbsp;&nbsp;Login</a>
+</div>
+{% endblock %}

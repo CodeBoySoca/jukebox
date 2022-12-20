@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="create-playlist-content">
+  <h1>CREATE PLAYLIST</h1>  
+  <form>
+     <input type="text" name="playlist_name" placeholder=" Playlist name" /><br>
+     <select name="genre">
+       <option value="Hip Hop">Hip Hop</option> 
+       <option value="Bluegrass">Bluegrass</option> 
+       <option value="Jazz">Jazz</option> 
+       <option value="R&B">R&B</option> 
+       <option value="Electronica">Electronica</option> 
+       <option value="Metal">Metal</option> 
+       <option value="Salsa">Salsa</option> 
+       <option value="Reggaeton">Reggaeton</option> 
+       <option value="Dancehall">Dancehall</option> 
+       <option value="Classical">Classical</option> 
+       <option value="Samba">Samba</option> 
+       <option value="Bhangra">Bhangra</option> 
+       <option value="Gospel">Gospel</option> 
+       <option value="Dance">Dance</option> 
+       <option value="K-Pop">K-Pop</option> 
+       <option value="Pop">Pop</option> 
+       <option value="Alternative">Alternative</option> 
+       <option value="Reggae">Reggae</option> 
+       <option value="Oldies">Oldies</option> 
+       <option value="80s">80s</option> 
+       <option value="Disco">Disco</option> 
+       <option value="Afro Beat">Afro Beat</option> 
+       <option value="Country">Country</option> 
+       <option value="Ska">Ska</option> 
+       <option value="Bachata">Bachata</option> 
+     </select>
+  </form>
+  <a href="{{ url_for('song')}}"><i class="fa-solid fa-cloud"></i>&nbsp;&nbsp;create playlist</a>
+</div>
+{% endblock %}

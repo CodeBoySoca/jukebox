@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!---
+<div id="image-content">
+   <main>  
+      <h1>music tailored to the fan in you</h1>
+      <p>Get hot playlist and song of the day from popular artists</p>
+      <div><a href="#" class="btn">Start listening</a></div>
+  </main>
+  <div id="left-col">
+    <img src="{{ url_for('static', path='images/icon_group.svg')}}" alt="" >
+  </div>  
+    <div id="right-col">
+     <img src="{{ url_for('static', path='images/jukebox-girl-large.png')}}" alt="" >
+    </div> 
+</div>  //-->
+
+
+
+
+
+
+
+<div class="content-row">
+    <div class="col">
+        <main>  
+                <h1>music tailored to the fan in you</h1>
+                <p>Get hot playlist and song of the day from popular artists</p>
+                <div><a href="#" class="btn">Start listening</a></div>
+        </main>
+      </div>
+     <div class="row">
+        <div class="left-col">
+            <img src="{{ url_for('static', path='images/icon_group.svg')}}" alt="" >
+        </div>
+        <div class="right-col">
+            <img src="{{ url_for('static', path='images/jukebox-girl-large.png')}}" alt="" >
+        </div>
+     </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="song-content">
+  <h1>Add Song</h1>
+  <form method="post" enctype="multipart/form-data">
+    <label><i class="fa-solid fa-cloud-arrow-up"></i><input type="file" name="song_upload">&nbsp;&nbsp;update song</label>
+    <button><i class="fa-solid fa-cloud"></i>&nbsp;&nbsp;save song</button>
+ </form>
+</div>
+
+{% endblock %}
