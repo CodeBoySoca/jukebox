@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="login-content">
+  <h1>REGISTRATION</h1>
+  <form method="post">
+     <input type="text" name="name" placeholder=" Name or Username"/><br>
+     <input type="email" name="email" placeholder=" E-mail"/><br>
+     <input type="password" name="password" placeholder=" Password" /><br>
+     <button formaction="{{ url_for('register')}}"><i class="fa-solid fa-cloud"></i>&nbsp;&nbsp;Register</button>
+  </form>
+
+</div>
+{% endblock %}
+
+

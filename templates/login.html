@@ -2,11 +2,11 @@
 {% block content %}
 <div class="login-content">
   <h1>LOGIN</h1>  
-  <form>
-     <input type="text" name="name" placeholder=" Name" /><br>
+  <form method="post">
      <input type="email" name="email" placeholder=" E-mail" /><br>
+     <input type="password" name="password" placeholder=" Password" /><br>
+     <button formaction="{{ url_for('login')}}"><i class="fa-solid fa-cloud"></i>&nbsp;&nbsp;Continue</button>
   </form>
-  <a href="{{ url_for('song')}}"><i class="fa-solid fa-cloud"></i>&nbsp;&nbsp;Login</a>
-  <a href="{{ url_for('song')}}"><i class="fa-solid fa-cloud"></i>&nbsp;&nbsp;Register</a>
+
 </div>
 {% endblock %}

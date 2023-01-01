@@ -6,6 +6,6 @@ from models.users import Users
 
 async def init_db():
     client = AsyncIOMotorClient(
-        'DATABASE URI HERE'
+        'mongodb+srv://loverboysoca:fhO9fC7MHQ5DYzgP@jukebox-cluster.eaxenux.mongodb.net/jukebox'
     )
     await init_beanie(database=client.jukebox, document_models=[Playlists, Song, Users])
